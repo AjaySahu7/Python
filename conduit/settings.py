@@ -84,10 +84,14 @@ WSGI_APPLICATION = 'conduit.wsgi.application'
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+     'default': {
+          'ENGINE': 'django.db.backends.mysql',
+          'NAME': 'ajaysahudb',
+          'USER': 'ajaysahudb',
+          'PASSWORD': 'ajaysahudb',
+          'HOST': 'ajaysahudb.cc7yxwd7osbv.us-east-1.rds.amazonaws.com',
+          'PORT': '3306',
+                }
 }
 
 
